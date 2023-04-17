@@ -12,7 +12,7 @@
 	install_github("seanchen607/AlienindexR")
 	library(AlienindexR)
 
-## :file_folder: prepare input files
+## :file_folder: Prepare input files
 
 To acquire the homolog search result in the correct format, use parameter below: 
 
