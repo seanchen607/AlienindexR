@@ -25,8 +25,8 @@ For BLAST, the output parameter should be: -outfmt '6 qseqid sseqid pident lengt
 For diamond BLAST, the output parameter should be: -outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore.
 }
 \examples{
-test_donor <- read.table(gzfile(system.file("extdata", c("test_0.tab", package = "AlienindexR")), header=TRUE, sep="\t")
-test_recipient <- read.table(gzfile(system.file("extdata", c("test_1.tab", package = "AlienindexR")), header=TRUE, sep="\t")
+test_donor <- read.table(gzfile(system.file("extdata", "test_0.txt.gz", package = "AlienindexR")), header=FALSE, sep="\t")
+test_recipient <- read.table(gzfile(system.file("extdata", "test_1.txt.gz", package = "AlienindexR")), header=FALSE, sep="\t")
 AlienindexR(test_donor, test_recipient)
 }
 \references{
