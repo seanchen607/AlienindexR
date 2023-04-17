@@ -22,8 +22,6 @@ To acquire the homolog search result in the correct format, use parameter below:
 	# for diamond
 	-outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore
 
-For details, please see [Tutorial](https://seanchen607.github.io/AlienindexR.html).
-
 ## :bulb: Run AlienindexR
 
 To calculate Alien Index for shared homologs in the target species with donor/recipient, use codes below to run examples: 
