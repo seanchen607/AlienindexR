@@ -24,6 +24,22 @@ To acquire the homolog search result in the correct format, use parameter below:
 
 For details, please see [Tutorial](https://seanchen607.github.io/AlienindexR.html).
 
+## :bulb: Run AlienindexR
+
+To calculate Alien Index for shared homologs in the target species with donor/recipient, use codes below to run examples: 
+
+	# Read R documentation
+	?AlienindexR
+	
+	# load input files
+	test_donor <- read.table(gzfile(system.file("extdata", "test_0.txt.gz", package = "AlienindexR")), header=FALSE, sep="\t")
+	test_recipient <- read.table(gzfile(system.file("extdata", "test_1.txt.gz", package = "AlienindexR")), header=FALSE, sep="\t")
+	
+	# Calculate Alien Index
+	AlienindexR(test_donor, test_recipient)
+
+AlienindexR will output a two-column data frame containing the gene names and their corresponding Alien Indexes.
+
 ## :orange_book: What is Alien Index (AI)?
 
 Alienness takes as input the result of a BLASTp search of a whole set of predicted proteins of interest against the protein libraries of donor/recipient species. 
